@@ -10,6 +10,7 @@ int main() {
 		while(j < 4) {
 			printf("Ingrese nota %d, alumno %d: ",j+1,i+1);
 			scanf("%d",&notas[i][j]);
+			j++;
 		}
 		j = 0;
 		i++;
@@ -24,6 +25,7 @@ int main() {
 		printf("Notas Alumno %d\n",i+1);
 		while(j < 4) {
 			printf("Nota Nro %d: %d\n",j+1,notas[i][j]);
+			j++;
 		}
 		printf("\n");
 		j = 0;
