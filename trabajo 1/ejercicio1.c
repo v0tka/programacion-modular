@@ -18,22 +18,24 @@ int main()
     printf("Ingrese un numero: ");
     scanf("%d", &entrada);
 
-    if(entrada % 10 == 0) {
-      suma_multiplos_10 = suma_multiplos_10 + entrada;
-    }
+    if(entrada != 0) {
+      // Si lo que ingreso el usuario es multiplo de 10
+      if(entrada % 10 == 0) {
+        suma_multiplos_10 = suma_multiplos_10 + entrada;
+      }
 
-    if(entrada % 5 == 0) {
-      suma_multiplos_5 = suma_multiplos_5 + entrada;
-    }
+      if(entrada % 5 == 0) {
+        suma_multiplos_5 = suma_multiplos_5 + entrada;
+      }
 
-    if(entrada > mayor) {
-      mayor = entrada;
-    }
+      if(entrada > mayor) {
+        mayor = entrada;
+      }
 
-    if(entrada < menor) {
-      menor = entrada;
+      if(entrada < menor) {
+        menor = entrada;
+      }
     }
-
   }
 
 
